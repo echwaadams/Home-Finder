@@ -17,6 +17,7 @@ public class SignupActivity extends AppCompatActivity {
     TextView mSignupTextView;
     @BindView(R.id.signupButton)
     Button mSignupButton;
+    @BindView(R.id.emailEditText) EditText mEmailEditText;
     @BindView(R.id.passwordEditText)
     EditText mPasswordEditText;
     @BindView(R.id.textView) TextView mTextView;
