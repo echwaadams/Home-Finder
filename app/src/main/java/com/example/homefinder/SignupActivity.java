@@ -20,7 +20,6 @@ public class SignupActivity extends AppCompatActivity {
     @BindView(R.id.emailEditText) EditText mEmailEditText;
     @BindView(R.id.passwordEditText)
     EditText mPasswordEditText;
-    @BindView(R.id.textView) TextView mTextView;
     @BindView(R.id.confirmPasswordEditText) EditText mConfirmPasswordEditText;
     @BindView(R.id.userNameEditText) EditText mUserNameEditText;
     @BindView(R.id.bottomTextView) TextView mBottomTextView;

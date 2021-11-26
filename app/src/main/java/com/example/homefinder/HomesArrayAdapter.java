@@ -14,7 +14,7 @@ public class HomesArrayAdapter extends ArrayAdapter {
     public HomesArrayAdapter( Context mContext, int resource, String[] mHomes, String[] mDescription) {
         super(mContext, resource);
         this.mContext = mContext;
-        this.mContext = mContext;
+        this.mHomes = mHomes;
         this.mDescription = mDescription;
 
     }
