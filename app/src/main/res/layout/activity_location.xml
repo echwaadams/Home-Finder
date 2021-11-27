@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/locationEditText"
         android:background="#38ffffff"
-        android:hint="Username"
+        android:hint="Enter Your Location"
         android:layout_below="@id/locationTextView"
         android:textColorHint="@color/white"
         android:layout_margin="10dp"
