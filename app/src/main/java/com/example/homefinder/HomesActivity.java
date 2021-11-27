@@ -19,12 +19,12 @@ public class HomesActivity extends AppCompatActivity {
     @BindView(R.id.listView)
     ListView mListView;
 
-    private String[] homes = new String[] {"Apartment","Bungalow","Cabin", "Chalet House",
-            "Condominium","Condor", "Cottage", "Flat","Mansion","Multi-family House"
-            , "Ranch-style house","Single-family","Tower","Tiny Home", "Townhome" };
-    private String[] description = new String[] {"Vegan Food", "Breakfast", "Fishs Dishs",
-            "Scandinavian", "Coffee", "English Food", "Burgers", "Fast Food", "Noodle Soups",
-            "Mexican", "BBQ", "Cuban", "Bar Food", "Sports Bar", "Breakfast", "Mexican" };
+    private String[] homes = new String[] {"Apartment","Bungalow","Cabin", "Duplex",
+            "Condominium","Condor", "Cottage", "Flat","Mansionette","Multi-family House"
+            , "Luxury Villa","Single-family","Tower","Tiny Home", "Townhome" };
+    private String[] description = new String[] {"3 Bedroom: Available", "3 Bedroom: Not Available", "3 Bedroom:ot Available N  ",
+            "3 Bedroom: Not Available", "3 Bedroom: Available", "3 Bedroom: Available", "3 Bedroom: Available", "3 Bedroom:Available", "3 Bedroom: Available",
+            "3 Bedroom: Available", "3 Bedroom: Not available", "3 Bedroom: Available", "3 Bedroom: Not Available", "3 Bedroom:Available", "3 Bedroom: Not Available", "3 Bedroom: Available" };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
