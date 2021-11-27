@@ -21,7 +21,7 @@
         android:background="#38ffffff"
         android:hint="Username"
         android:layout_below="@id/loginTextView"
-        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:layout_margin="10dp"
         android:drawableLeft="@drawable/ic_baseline_person_outline_24"
         android:drawablePadding="20dp"
@@ -33,7 +33,7 @@
         android:background="#38ffffff"
         android:hint="Password"
         android:layout_below="@id/userNameEditText"
-        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:layout_margin="10dp"
         android:drawableLeft="@drawable/ic_baseline_info_24"
         android:drawablePadding="20dp"
@@ -64,7 +64,7 @@
         android:layout_marginBottom="20dp"
         android:inputType="textPassword"
         android:text="Forgot password?"
-        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         tools:ignore="TouchTargetSizeCheck" />
     <TextView
         android:layout_width="wrap_content"

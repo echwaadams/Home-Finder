@@ -23,7 +23,6 @@ public class SignupActivity extends AppCompatActivity {
     EditText mPasswordEditText;
     @BindView(R.id.confirmPasswordEditText) EditText mConfirmPasswordEditText;
     @BindView(R.id.userNameEditText) EditText mUserNameEditText;
-    @BindView(R.id.bottomTextView) TextView mBottomTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +35,6 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //passing intent to login activity
-                Log.e("SignupActivity","signin button clicked");
                 Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
