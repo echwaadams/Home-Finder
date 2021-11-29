@@ -14,7 +14,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home Finder"
+        android:text="MeetUp Finder"
         android:foregroundGravity="center"
         android:layout_below="@id/homeimage"
         android:textColor="@color/white"

@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
 
@@ -31,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         mStartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                Toast.makeText(MainActivity.this, "WELCOME TO MEETUP FINDER",Toast.LENGTH_LONG).show();
+
                 Log.e("MainActivity","expected errors");
                 //passing intent between activities
                 Intent intent = new Intent(MainActivity.this, SignupActivity.class);
