@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/activity_venues.xml" value="0.1" />
       </map>
     </option>
   </component>

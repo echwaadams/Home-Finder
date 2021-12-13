@@ -8,18 +8,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HomeFinder">
+        android:theme="@style/AppTheme">
 
-        <activity android:name=".HomesActivity">
+        <activity android:name=".LocationActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LocationActivity"/>
         </activity>
-       <activity android:name=".LocationActivity">
-           <meta-data
-               android:name="android.support.PARENT_ACTIVITY"
-               android:value=".MainActivity"/>
-       </activity>
+        <activity android:name=".VenuesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
         <activity
             android:name=".LoginActivity"
             android:exported="true" />

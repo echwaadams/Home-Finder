@@ -17,14 +17,14 @@ import com.google.android.material.button.MaterialButton;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
     @BindView(R.id.loginTextView)
     TextView mLoginTextView;
     @BindView(R.id.userNameEditText)
     EditText mUserNameEditText;
     @BindView(R.id.passwordEditText) EditText mPasswordEditText;
     @BindView(R.id.loginButton)
-    MaterialButton mLoginButton;
+    Button mLoginButton;
     @BindView(R.id.others) TextView mOthers;
     @BindView(R.id.forgotpass) TextView mForgotpass;
 
@@ -35,19 +35,13 @@ public class LoginActivity extends AppCompatActivity {
         //Binding views
         ButterKnife.bind(this);
 
-        mLoginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(mUserNameEditText.getText().toString().equals("admin") && mPasswordEditText.getText().toString().equals("admin")){
-                    //correct
-                    Toast.makeText(LoginActivity.this, "LOGIN SUCCESSFUL",Toast.LENGTH_LONG).show();
-                }else{
-                    // Incorrect
-                    Toast.makeText(LoginActivity.this,"LOGIN FAILED",Toast.LENGTH_LONG).show();
-                }
-                Intent intent = new Intent(LoginActivity.this, LocationActivity.class);
-                startActivity(intent);
-            }
-        });
+        mLoginButton.setOnClickListener(this);
     }
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent(LoginActivity.this, VenuesActivity.class);
+        startActivity(intent);
+    }
+
+    
 }

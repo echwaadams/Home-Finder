@@ -5,18 +5,17 @@ import android.widget.ArrayAdapter;
 
 import androidx.annotation.NonNull;
 
-public class HomesArrayAdapter extends ArrayAdapter {
+public class VenuesArrayAdapter extends ArrayAdapter {
     private Context mContext;
     private String[] mVenues;
     private String[] mCapacity;
 
 
-    public HomesArrayAdapter( Context mContext, int resource, String[] mVenues, String[] mCapacity) {
+    public VenuesArrayAdapter( Context mContext, int resource, String[] mVenues, String[] mCapacity) {
         super(mContext, resource);
         this.mContext = mContext;
         this.mVenues = mVenues;
         this.mCapacity= mCapacity;
-
     }
     @Override
     public Object getItem(int position){

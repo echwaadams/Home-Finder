@@ -12,7 +12,7 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class LocationActivity extends AppCompatActivity {
+public class LocationActivity extends AppCompatActivity implements View.OnClickListener{
     @BindView(R.id.locationTextView)
     TextView mLocationTextView;
     @BindView(R.id.locationEditText)
@@ -28,15 +28,15 @@ public class LocationActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         //setting clicklistener
-        mFindHomesButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // user input
-                String homes = mLocationEditText.getText().toString();
-                Intent intent = new Intent(LocationActivity.this, HomesActivity.class);
-                intent.putExtra("homes",homes);
-                startActivity(intent);
-            }
-        });
+        mFindHomesButton.setOnClickListener(this);
     }
+    @Override
+    public void onClick(View view) {
+        // user input
+        String homes = mLocationEditText.getText().toString();
+        Intent intent = new Intent(LocationActivity.this, VenuesActivity.class);
+        intent.putExtra("homes",homes);
+        startActivity(intent);
+    }
+
 }
